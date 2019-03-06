@@ -1,4 +1,5 @@
 @extends('layouts.app')
+
 @section('content')
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header is-small-screen">
     <header class="mdl-layout__header">
@@ -138,8 +139,8 @@
             </ul>
 
             <div class="avatar-dropdown" id="icon">
-                <span>Luke</span>
-                <img src="images/Icon_header.png">
+                <span>Jandre</span>
+                <img src={{ asset('css/images/Icon_header.png') }}>
             </div>
             <!-- Account dropdawn-->
             <ul class="mdl-menu mdl-list mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect mdl-shadow--2dp account-dropdown"
