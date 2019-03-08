@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" >
 
     <head>
         <meta charset="utf-8">
@@ -22,7 +22,7 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     </head>
 
-    <body id="app">
+    <body ng-app="myApp">
         {{-- <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -75,6 +75,9 @@
         </nav> --}}
 
         @yield('content')
+
+        <script type="text/javascript" src="{{asset('js/angular.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/appAngular.js')}}"></script>
 
         <script type="text/javascript" src="{{asset('js/library/d3.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/library/getmdl-select.min.js')}}"></script>

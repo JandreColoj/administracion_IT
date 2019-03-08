@@ -1,6 +1,3 @@
-var app = angular.module('myApp', [
-]);
-
 app.controller('InicioCtrl',function($scope, $http, $timeout, $log){
 
    $scope.nombre ="jose";

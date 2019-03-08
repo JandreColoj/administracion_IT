@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header is-small-screen">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header is-small-screen" ng-controller="InicioCtrl" ng-cloak >
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
             <div class="mdl-layout-spacer"></div>
             <!-- Search-->
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
                 <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
-                    <i class="material-icons">search</i>
+                    <i class="material-icons" ng-click="alerta()">search</i>
                 </label>
 
                 <div class="mdl-textfield__expandable-holder">
@@ -222,7 +222,7 @@
                     UI
                     <i class="material-icons">keyboard_arrow_down</i>
                 </a>
-                <div class="mdl-navigation">
+                <!--div class="mdl-navigation">
                     <a class="mdl-navigation__link" href="ui-buttons.html">
                         Buttons
                     </a>
@@ -241,7 +241,7 @@
                     <a class="mdl-navigation__link" href="ui-typography.html">
                         Typography
                     </a>
-                </div>
+                </div-->
             </div>
             <a class="mdl-navigation__link" href="forms.html">
                 <i class="material-icons" role="presentation">person</i>
@@ -496,4 +496,9 @@
 
     </main>
 </div>
+
 @endsection
+
+@push('scripts')
+    <script type="text/javascript" src="{{asset('js/Controllers/inicio.js')}}"></script>
+@endpush
