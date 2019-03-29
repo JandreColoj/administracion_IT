@@ -10655,6 +10655,25 @@ a.text-dark:focus {
   }
 }
 
+body {
+  background: url(/images/administracion.jpg?dd44a83608d57ce54042f8bfad02a6d2);
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+}
+
+.mtop {
+  margin-top: 25%;
+}
+
+.center {
+  text-align: center;
+}
+
+.bnt_ingreso {
+  width: 215px;
+  background: #2f8683;
+}
+
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
