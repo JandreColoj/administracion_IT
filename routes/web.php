@@ -11,13 +11,22 @@
 |
 */
 
+Route::get('/info', function () {
+    return view('info');
+});
+
 Route::get('/escritorio', function () {
     return view('welcome');
 });
 
-Route::get('/', function () {
-    Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/logout',function(){
+    Auth::logout();
+    return redirect('/login');
 });
+
+Route::get('/', 'HomeController@index');
+Route::get('', 'HomeController@index');
+Route::get('home', 'HomeController@index');
 
 Auth::routes();
 
