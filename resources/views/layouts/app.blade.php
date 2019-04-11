@@ -89,6 +89,9 @@
         <script type="text/javascript" src="{{asset('js/library/widgets/pie-chart/pie-chart-nvd3.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/library/widgets/table/table.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/library/widgets/todo/todo.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/chart.min.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/highcharts.js')}}"></script>
+
 
         @stack('scripts')
     </body>

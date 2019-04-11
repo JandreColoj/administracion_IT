@@ -15,8 +15,12 @@ Route::get('/info', function () {
     return view('info');
 });
 
-Route::get('/escritorio', function () {
-    return view('welcome');
+Route::get('/kpi', function () {
+    return view('kpi');
+});
+
+Route::get('/tema', function () {
+    return view('theme');
 });
 
 Route::get('/logout',function(){
