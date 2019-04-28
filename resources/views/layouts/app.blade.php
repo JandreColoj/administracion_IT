@@ -19,7 +19,9 @@
         <link href="{{ asset('css/library/getmdl-select.min.css') }}" rel="stylesheet">
         <link href="{{ asset('css/library/nv.d3.css') }}" rel="stylesheet">
         <link href="{{ asset('css/library/application.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/library/font-awesome-4.7.0/css/font-awesome.css') }}" rel="stylesheet">
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/componentes.css') }}" rel="stylesheet">
     </head>
 
     <body ng-app="myApp">

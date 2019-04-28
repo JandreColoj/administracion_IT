@@ -4250,7 +4250,9 @@ input.mdl-button[type="submit"] {
   flex-direction: column;
   font-size: 16px;
   font-weight: 400;
-  min-height: auto;
+  min-height: 250px;
+  /* max-height: 330px; */
+
   overflow: hidden;
   width: auto;
   z-index: 1;
@@ -4270,12 +4272,12 @@ input.mdl-button[type="submit"] {
 
 .mdl-card__title {
   align-items: center;
-  color: rgba(255, 255, 255, 0.8);
+  color: #00BCD4;
   display: block;
   display: flex;
   justify-content: stretch;
   line-height: normal;
-  padding: 20px 16px;
+  padding: 10px;
   perspective-origin: 165px 56px;
   transform-origin: 165px 56px;
   box-sizing: border-box; }
@@ -11146,7 +11148,7 @@ main {
     display: none; } }
 
 .mdl-card__title {
-  background-color: rgba(0, 0, 0, 0.3); }
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .mdl-card__supporting-text {
   width: calc(100% - 32px); }
@@ -11500,7 +11502,8 @@ a {
 
 .trending .mdl-card__supporting-text {
   width: 100%;
-  padding: 8px 0; }
+  padding: 8px 0; 
+  }
 
 .trending .mdl-list__item:hover {
   background-color: rgba(0, 0, 0, 0.2); }

@@ -31,9 +31,13 @@
             <i class="material-icons">multiline_chart</i>
             KPI
         </a>
-        <a class="mdl-navigation__link" href="forms.html">
+        <a class="mdl-navigation__link" href={{ url('register') }}>
             <i class="material-icons" role="presentation">person</i>
-            Cuenta
+            Nuevo Usuario
+        </a>
+        <a class="mdl-navigation__link" href={{ url('register') }}>
+            <i class="material-icons" role="presentation">person</i>
+            Listado de usuario
         </a>
 
         <div class="mdl-layout-spacer"></div>

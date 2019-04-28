@@ -73,6 +73,12 @@ return [
             'sslmode' => 'prefer',
         ],
 
+        /**
+         * Next, to accept connections from a remote PostreSQL client to all databases and all users add the following 
+         * line to /etc/postgresql/10/main/pg_hba.conf
+         * change port 54320
+         */
+
         'sqlsrv' => [
             'driver' => 'sqlsrv',
             'host' => env('DB_HOST3', 'localhost'),
