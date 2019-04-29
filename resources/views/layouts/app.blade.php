@@ -22,6 +22,8 @@
         <link href="{{ asset('css/library/font-awesome-4.7.0/css/font-awesome.css') }}" rel="stylesheet">
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/componentes.css') }}" rel="stylesheet">
+        <link href="{{ asset('js/block/angular-block-ui.css') }}" rel="stylesheet">
+        
     </head>
 
     <body ng-app="myApp">
@@ -80,21 +82,20 @@
 
         <script type="text/javascript" src="{{asset('js/angular.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/appAngular.js')}}"></script>
-
+        
         <script type="text/javascript" src="{{asset('js/library/d3.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/library/getmdl-select.min.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/library/material.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/library/nv.d3.js')}}"></script>
-
+        
         <script type="text/javascript" src="{{asset('js/library/widgets/line-chart/line-chart-nvd3.js')}}"></script>
         {{-- <script type="text/javascript" src="{{asset('js/library/widgets/map/maps.js')}}"></script> --}}
         <script type="text/javascript" src="{{asset('js/library/widgets/pie-chart/pie-chart-nvd3.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/library/widgets/table/table.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/library/widgets/todo/todo.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/block/angular-block-ui.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/chart.min.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/highcharts.js')}}"></script>
-
-
         @stack('scripts')
     </body>
 

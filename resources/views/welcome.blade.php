@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+<script>
+    var csrfToken ="{{csrf_token()}}";
+</script>
+
 @section('content')
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header is-small-screen">
 

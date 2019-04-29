@@ -4,7 +4,7 @@
         <div class="mdl-layout-spacer"></div>
 
         <div class="avatar-dropdown" id="icon">
-            <span>Jandre</span>
+            <span> {{ Auth::user()->name }} </span>
             <img src={{ asset('css/images/Icon_header.png') }}>
         </div>
         <!-- Account dropdawn-->
@@ -31,11 +31,11 @@
             <i class="material-icons">multiline_chart</i>
             KPI
         </a>
-        <a class="mdl-navigation__link" href={{ url('register') }}>
+        <a class="mdl-navigation__link" href={{ url('registrar')}}>
             <i class="material-icons" role="presentation">person</i>
             Nuevo Usuario
         </a>
-        <a class="mdl-navigation__link" href={{ url('register') }}>
+        <a class="mdl-navigation__link" href={{ url('usuarios') }}>
             <i class="material-icons" role="presentation">person</i>
             Listado de usuario
         </a>

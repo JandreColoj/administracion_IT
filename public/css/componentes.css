@@ -101,7 +101,7 @@
   }
 
   .p-s{
-    padding: 0px 20px 0px 0px;
+    padding: 25px 20px 20px 0px;
   }
 
   .p-raw{
@@ -124,4 +124,31 @@
 
   .margin_register{
     margin: 70px 1px 1px 0px;
+  }
+
+  .mdl-resumen{
+    padding: 30px 1px 1px 0px;
+    min-height: 275px;
+    color: #fff;
+    text-align: center;
+    background: #4e4e4e;
+  }
+
+  .mdl-resumen span{
+    font-size: 20px;
+  }
+
+  .pdg{
+    padding: 10px 1px 30px 1px;
+  }
+
+  .pd-chrt{
+    padding-bottom: 52px;
+  }
+
+  .scroll_table{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: auto;
+      font-weight: 100;
+      font-size: 12px;
   }
