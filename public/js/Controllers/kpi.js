@@ -14,10 +14,11 @@ app.controller('KPICtrl',function($scope, $http, $window, blockUI){
    //grafica de clientes
    $scope.chart_cliente_pie = function(data){
 
-      $http.post("api/getClientes",data).then(function(response) {
+      var labelClientes = [];
+      var dataClientes = []; 
+      $scope.clientes = [];
 
-         var labelClientes = [];
-         var dataClientes = []; 
+      $http.post("api/getClientes",data).then(function(response) {
 
          $scope.clientes = response.data.clientes;
          
@@ -66,13 +67,14 @@ app.controller('KPICtrl',function($scope, $http, $window, blockUI){
    //grafica de productos
    $scope.chart_productos = function(data){
 
-      $http.post("api/getProductos",data).then(function(response) {
+      var labelCategoria = [];
+      var dataCategoria = []; 
+      var labelProductos = [];
+      var dataProductos = []; 
+      $scope.productos = [];
 
-         var labelCategoria = [];
-         var dataCategoria = []; 
-         var labelProductos = [];
-         var dataProductos = []; 
-   
+      $http.post("api/getProductos",data).then(function(response) {
+  
          $scope.productos = response.data.productos;
          
          $scope.total_productos = $scope.productos.length;
@@ -174,11 +176,12 @@ app.controller('KPICtrl',function($scope, $http, $window, blockUI){
 
    $scope.chart_ventasDia = function(data){
 
-      $http.post("api/getVentasDia",data).then(function(response) {
+      var labelDias = [];
+      var DataGTQ = [];
+      var DataUSD = [];
+      $scope.ventas = [];
 
-         var labelDias = [];
-         var DataGTQ = [];
-         var DataUSD = [];
+      $http.post("api/getVentasDia",data).then(function(response) {
 
          $scope.ventas = response.data.ventas;
 
@@ -239,13 +242,13 @@ app.controller('KPICtrl',function($scope, $http, $window, blockUI){
    }
 
    $scope.chart_ventaMes = function(data){
+      
+      var labelMes = [];
+      var DataGTQ = [];
+      var DataUSD = [];
+      $scope.ventas = [];
 
       $http.post("api/getVentasMes",data).then(function(response) {
-
-         var labelMes = [];
-         var DataGTQ = [];
-         var DataUSD = [];
-
 
          $scope.ventas = response.data.ventas;
 
@@ -308,10 +311,10 @@ app.controller('KPICtrl',function($scope, $http, $window, blockUI){
 
    $scope.chart_productos_moda = function(data){
 
-      $http.post("api/getProductosModa",data).then(function(response) {
+      var labelProductos = [];
+      var DataCantidad= [];
 
-         var labelProductos = [];
-         var DataCantidad= [];
+      $http.post("api/getProductosModa",data).then(function(response) {
 
          $scope.prod_moda = response.data.productos;
          $scope.producto_top = $scope.prod_moda[0].nombre;
